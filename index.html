@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Achados e Perdidos</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h1>Achados e Perdidos</h1>
+
+  <form action="https://script.google.com/macros/s/AKfycbxzhzDwrwDPLm5Uap6mStrh6OmI1QhNSfgCOz_chmc0TS_icKwkKK6lGiY6_InOygGrfA/exec" method="POST" enctype="multipart/form-data">
+
+    <label for="nome">Nome:</label>
+    <input type="text" name="nome" required placeholder="Digite seu nome completo" />
+
+    <label for="email">E-mail:</label>
+    <input type="email" name="email" required placeholder="Digite seu e-mail" />
+
+    <label for="tel">Número de celular:</label>
+    <input type="tel" name="tel" placeholder="(XX) XXXXX-XXXX" required />
+
+    <label for="reserva">Reserva:</label>
+    <input type="text" name="reserva" placeholder="Digite sua Reserva Charlie" />
+
+    <div class="row-flex">
+      <div class="half">
+        <label for="checkout">Data de checkout:</label>
+        <input type="date" name="checkout" />
+      </div>
+      <div class="half">
+        <label for="apto">Nº do apartamento:</label>
+        <input type="text" name="apto" placeholder="Ex: 502" />
+      </div>
+    </div>
+
+    <label for="predio">Prédio:</label>
+    <select name="predio">
+      <option value="">Selecione</option>
+      <option value="Charlie Hotel Atmosfera Paulista">Charlie Hotel Atmosfera Paulista</option>
+      <option value="Charlie Aeroporto Congonhas CGH">Charlie Aeroporto Congonhas CGH</option>
+      <option value="House of Charlie Vila Mariana">House of Charlie Vila Mariana</option>
+    </select>
+
+    <label for="item">Nome do Item:</label>
+    <input type="text" name="item" placeholder="Digite o nome do item" />
+
+    <label for="descricao">Descrição do Item:</label>
+    <textarea name="descricao" required placeholder="Descreva detalhes do seu item, para facilitar a busca..."></textarea>
+
+    <div class="file-upload">
+      <label for="arquivo">Envie uma imagem do item ou similar:</label>
+      <input type="file" name="arquivos" accept="image/*" />
+    </div>
+
+    <label>
+      <input type="checkbox" required /> Eu li e Aceito os <a href="#">Termos de Condições</a>
+    </label>
+
+    <button type="submit">Enviar</button>
+  </form>
+</body>
+</html>
