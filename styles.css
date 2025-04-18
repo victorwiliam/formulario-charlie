@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 20px;
   background: linear-gradient(to right, #2c2b2a, #1d1c1c);
-  color: #fff;
+  color: #434141;
   background-image: url('bg-charlie.png');
   background-size: cover;
   background-position: center;
@@ -116,7 +116,7 @@ input[type="file"] {
 }
 
 button[type="submit"] {
-  background: linear-gradient(to right, #c9a66b, #a37d47);
+  background: linear-gradient(to right, #111111, #1e1d1d);
   color: #fff;
   padding: 16px 50px;
   border: none;
