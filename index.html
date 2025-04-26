@@ -18,8 +18,7 @@
 </header>
 <body>
   <h1>Achados e Perdidos</h1>
-  <form action="https://script.google.com/macros/s/AKfycbxzhzDwrwDPLm5Uap6mStrh6OmI1QhNSfgCOz_chmc0TS_icKwkKK6lGiY6_InOygGrfA/exec" method="POST" enctype="multipart/form-data">
-
+  <form id="meu-formulario" method="POST" enctype="multipart/form-data">
     <label for="nome">Nome:</label>
     <input type="text" name="nome" required placeholder="Digite seu nome completo" />
 
@@ -63,10 +62,39 @@
     </div>
 
     <label>
-      <input type="checkbox" required /> Eu li e Aceito os <a href="#">Termos de Condições</a>
+      <input type="checkbox" required /> Eu li e Aceito os <a href="#" id="open-termos">Termos de Condições</a>
+
     </label>
 
     <button type="submit">Enviar</button>
   </form>
+
+  <!-- Popup de Termos -->
+<div id="popup-termos" class="popup">
+  <div class="popup-content">
+    <span class="close-popup">&times;</span>
+    <h2>Termos de Condições</h2>
+    <p>
+      Lorem ipsum dictumst mauris netus curae primis gravida auctor, pretium lacus odio lorem habitasse euismod sem porttitor dictum, ad senectus velit luctus auctor vel pharetra. netus aliquet lorem in sed nibh ligula pulvinar, nunc dolor faucibus aenean facilisis ultricies sed, fringilla fusce volutpat maecenas scelerisque libero. leo morbi dictumst egestas porta amet primis nullam ultrices, bibendum eleifend fringilla conubia ante venenatis sapien amet congue, etiam suspendisse magna aliquam lacinia proin commodo. nostra pretium donec litora nostra donec eu, porta maecenas varius nisi ante ornare cursus, massa id duis risus vehicula. 
+
+      Rutrum accumsan dolor molestie laoreet volutpat cursus ornare ut nunc tempus, netus habitasse himenaeos ante laoreet luctus cubilia fermentum pretium, sit fermentum lacinia sociosqu ipsum aliquet nulla neque aliquet. porta aliquam nibh dictum fames congue tincidunt cubilia libero, rhoncus mi duis massa ornare litora vivamus, lacinia habitant dictumst hac malesuada interdum orci. rhoncus elementum posuere etiam litora facilisis purus a leo elit, urna id per sollicitudin molestie netus massa aliquam, quisque convallis eu varius habitasse nullam id et. luctus feugiat tempus auctor ut est mauris imperdiet nisl vel a torquent porttitor, venenatis orci auctor donec libero dictum fermentum quam urna in. 
+    
+      Cras neque sociosqu lobortis in bibendum tempor quisque nunc, nullam ac iaculis nullam vehicula libero mollis diam posuere, nostra quis ullamcorper leo ornare vitae himenaeos. non rhoncus tempus sagittis hendrerit sodales neque, viverra quis sit fames sodales, suscipit ut molestie auctor consequat. lacinia arcu imperdiet ut a convallis vulputate commodo inceptos torquent, tempus feugiat pharetra fusce sapien dapibus mi aenean. urna donec lorem aptent mollis sodales rhoncus maecenas platea, praesent tincidunt curabitur vestibulum nibh taciti blandit, tortor metus urna vel sollicitudin etiam sit. ultricies sodales etiam vivamus quisque sagittis morbi, euismod aenean donec aliquet faucibus bibendum, sapien porttitor amet facilisis fames, adipiscing quis maecenas aliquam rutrum. 
+    
+      Curabitur sapien faucibus lacinia nunc pellentesque eget magna lacus himenaeos, nunc mauris id sed condimentum consequat gravida a, gravida elementum habitasse justo interdum dapibus nostra erat. aliquet elit nulla neque pellentesque pharetra praesent a mauris, purus diam aenean aliquet hendrerit augue nam donec non, taciti sit nostra dui consequat curabitur fames. leo curabitur quisque consequat tellus risus nec tortor himenaeos, posuere aliquam ante taciti integer senectus pharetra aenean donec, elit at turpis fermentum curae sapien diam. risus tempus varius inceptos feugiat suscipit ac aptent, congue gravida conubia duis sollicitudin ornare, senectus odio accumsan volutpat cubilia convallis. 
+    
+      Maecenas aliquam amet justo viverra mollis fusce quis nisi eget, blandit eros integer diam sollicitudin bibendum lorem nec id eu, cursus pharetra rhoncus non pretium luctus tempus primis. mauris eget tempor sagittis placerat euismod ante ullamcorper orci tortor orci a cras ligula, quis vel faucibus tincidunt fringilla turpis risus vitae vivamus mauris nostra fermentum. netus cubilia conubia tempus inceptos a tincidunt lectus tincidunt congue odio, est quisque aliquet cubilia vehicula hendrerit gravida tempor. amet a maecenas eleifend quam nibh ullamcorper sem, magna nisl laoreet odio velit fringilla congue diam, aliquam curabitur taciti habitant imperdiet curabitur. 
+    
+      Netus a vehicula ut inceptos pellentesque vulputate, habitasse quisque posuere varius pharetra. 
+      </p>
+  </div>
+</div>
+
+<!-- Importar o arquivo JS -->
+<script src="scripts.js"></script>
+
+<footer class="main-footer">
+  <p>&copy; 2025 Stay Charlie. Todos os direitos reservados.</p>
+</footer>
 </body>
 </html>
